@@ -17,12 +17,12 @@ app.use('/api/transactions', require('./routes/transactions'));
 app.use('/api/admin', require('./routes/admin'));
 
 // MongoDB Connection
-mongoose.connect('mongodb+srv://srirahdirs_db_user:m8PtF0GHVM2FkWtc@finance.gykxgpa.mongodb.net/?retryWrites=true&w=majority&appName=finance', {
+mongoose.connect('mongodb+srv://srirahdirs_db_user:m8PtF0GHVM2FkWtc@finance.gykxgpa.mongodb.net/finance?retryWrites=true&w=majority&appName=finance', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 })
-    .then(() => console.log('MongoDB Atlas Connected Successfully!'))
-    .catch(err => console.log('MongoDB Error:', err));
+    .then(() => console.log('MongoDB Atlas Connected Successfully 1!'))
+    .catch(err => console.log('MongoDB Error 11:', err));
 
 const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+app.listen(PORT, () => console.log(`Server running on port 123 ${PORT}`));
